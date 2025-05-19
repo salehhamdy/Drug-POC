@@ -1,6 +1,82 @@
-venv/
+############################
+#  Core Python artefacts   #
+############################
+# Byte-compiled / optimized / debug files
 __pycache__/
-*.pyc
-*.log
-.DS_Store
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+sdist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+############################
+#         venvs            #
+############################
+# Any local virtual-environment (rename / move as you wish)
+venv/
+.venv/
+
+############################
+#    Secrets & env files   #
+############################
+.env
+.env.*
 *.env
+*.secret
+*.key
+
+############################
+#   Project-specific junk  #
+############################
+# Big auto-generated assets
+data/
+embeddings/
+*.bin
+
+# Knowledge-graph exports
+kg/*.gz
+kg/*.tsv
+
+# RAG caches
+rag/__pycache__/
+
+############################
+#       Editor / IDE       #
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+############################
+#     OS cruft & logs      #
+############################
+.DS_Store
+Thumbs.db
+*.log
+docker_exec.txt
+
+############################
+#      Misc artefacts      #
+############################
+*.sqlite3
+*.db
+*.bak
+*.backup
